@@ -153,7 +153,7 @@ body {
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     body {
         max-width: 100%;
         max-height: 100%;
@@ -168,11 +168,30 @@ body {
     }
 
     #pg h3, #ug h3, #twelve h3, #tenth h3 {
+        color: #ac5e5e;
         text-decoration: underline;
     }
 
     .mar {
         margin-top: 1px;
+    }
+
+    #education > h1, #profile > h1 {
+        font-size: 30px;
+    }
+
+    #education div div {
+        width: 207px;
+        height: 175px;
+    }
+
+    #education div div h3 {
+        font-size: 20px;
+    }
+    
+    #education div div p {
+        font-size: 16px;
+        color: #8f5b5b;
     }
 
     #profile div {
@@ -189,6 +208,7 @@ body {
     }
     
     .height-width h1 a {
+        font-size: 20px;
         color: #ad8484;
     }
 }
