@@ -19,6 +19,13 @@ body {
     letter-spacing: 2px;
 }
 
+#navbar #namaste {
+    height: 75px;
+    width: 75px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
 #navbar #left {
     position: absolute;
     left: 50%;
@@ -106,17 +113,50 @@ body {
 
 #education div div h3 {
     font-size: 25px;
+    text-decoration: underline;
 }
 
 #education div div p {
     font-size: 20px;
 }
 
-#profile {
-    /* background-color: #61958b; */
+#projects {
+    margin-top: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #014638;
 }
 
-#profile > h1 {
+#projects > h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#projects .size {
+    height: 250px;
+    width: 425px;
+    margin: 15px 15px;
+}
+
+.mobile-version {
+    display: none;
+}
+
+#contact {
+    /* background-color: #61958b; */
+    margin-top: 4rem;
+}
+
+#contact > h1 {
     font-size: 40px;
     padding-top: 25px;
     margin-bottom: 10px;
@@ -126,7 +166,7 @@ body {
     align-items: center;
 }
 
-#profile div {
+#contact div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +184,7 @@ body {
 
 .height-width h1 a{
     text-decoration: none;
-    color: #fff;
+    color: #5b5858;
 }
 
 .height-width h1 a:hover{
@@ -163,6 +203,22 @@ body {
         display: none;
     }
 
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #namaste {
+        border-radius: 3px;
+        margin-left: -50px !important;
+    }
+
+    .site-header {
+        text-align: center;
+    }
+
     #education div {
         flex-direction: column;
     }
@@ -176,7 +232,7 @@ body {
         margin-top: 1px;
     }
 
-    #education > h1, #profile > h1 {
+    #education > h1, #projects > h1,#contact > h1 {
         font-size: 30px;
     }
 
@@ -194,7 +250,19 @@ body {
         color: #8f5b5b;
     }
 
-    #profile div {
+    #projects .center {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects .size {
+        width: 300px;
+        height: 175px;
+        margin: 10px 0;
+    }
+
+    #contact div {
         flex-direction: column;
     }
 
@@ -203,12 +271,12 @@ body {
     }
     
     .height-width {
-        width: 207px;
-        height: 60px;
+        width: fit-content;
+        height: 55px;
     }
     
     .height-width h1 a {
         font-size: 20px;
-        color: #ad8484;
+        color: #873d3d;
     }
 }
