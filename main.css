@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-image: url(/images/bg-img.jpg) ;
@@ -28,52 +32,68 @@ body {
     background-color: #605050;
 }
 
+
+/* navigation bar */
 #navbar {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    /* position: fixed; */
+    /* margin-left: 50px; */
+    padding: 10px 50px;
+    overflow: hidden;
+    background-color: #373030;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-#navbar h1 {
+/* #navbar h1 {
     font-family: 'Josefin Sans', sans-serif;
     color: #ad8484;
     font-size: 35px;
     letter-spacing: 2px;
-}
+} */
 
-#navbar #namaste {
+#logo {
     height: 75px;
     width: 75px;
-    margin-top: 10px;
-    margin-left: 35px;
+    /* margin-top: 10px;
+    margin-left: 35px; */
+    border-radius: 4px;
 }
 
-#navbar #left {
-    position: absolute;
+#menu {
+    /* position: absolute;
     left: 50%;
-    top: 3%;
+    top: 3%; */
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
-#navbar #left li {
+#menu li {
     margin: 0 22px;
     font-size: 30px;
 }
 
-#navbar #left li a {
+#menu li a {
     text-decoration: none;
     color: #8f5b5b;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
-#navbar #left li a:hover {
+#menu li a:hover {
     text-decoration: underline;
-    color: #014638;
-    font-size: 32px;
+    color: #fff;
+    font-size: 29px;
+    font-family: monospace;
 }
 
+section {
+    padding: 100px 0;
+}
+
+
+/* introduction css */
 .site-header {
     /* background-color: #1bbc9b; */
     color: #299f8c;
@@ -83,10 +103,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.site-header-content {
-    margin: 10px;
+    background-attachment: fixed;
 }
 
 .profile-pic {
@@ -94,6 +111,18 @@ body {
     height: 200px;
     width: 200px;
     box-shadow: #014638 2px 5px 5px;
+}
+
+.site-header-content {
+    margin: 10px;
+}
+
+.site-header-content h1 {
+    font-size: 30px;
+}
+
+.site-header-content h2 {
+    font-size: 25px;
 }
 
 #more-about-me {
@@ -115,12 +144,41 @@ body {
 }
 
 #more-about-me a:hover {
-    color: #361c1c;
+    /* color: #361c1c; */
+    font-size: 22px;
 }
 
+
+/* about me css */
+#about_me {
+    background-color: #014638;
+    background-attachment: fixed;
+}
+
+#about_me h1 {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#about_me p {
+    font-family: monospace;
+    padding: 0 50px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+}
+
+
+/* education css */
 #education {
     /* background-color: rgb(60, 176, 138); */
-    font-family: monospace;
+    /* margin-top: -5.5rem; */
+    background-attachment: fixed;
+    /* background-color: #111; */
 }
 
 #education h1 {
@@ -129,9 +187,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 #education div {
+    font-family: monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,14 +202,15 @@ body {
     height: 250px;
     flex-direction: column;
     border-radius: 25px;
-    margin: 0 10px;
+    margin: 0 15px;
     padding: 7px;
     text-align: center;
+    cursor: pointer;
 }
 
 #education div div:hover {
     background-color: #068a70;
-    cursor: pointer;
+    color: #fff;
 }
 
 #education div div h3 {
@@ -161,11 +222,73 @@ body {
     font-size: 20px;
 }
 
-#projects {
-    margin-top: 6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+/* skills css */
+#skills {
+    /* background-color: #299f8c; */
     background-color: #014638;
+    background-attachment: fixed;
+    height: 625px;
+}
+
+#skill {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills > .left {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    /* background-color: #873d3d; */
+    color: #fff;
+    font-family: monospace;
+    font-size: large;
+}
+
+#skills > .left p {
+    line-height: 25px;
+}
+
+#skills > .left > p a {
+    text-decoration: none;
+    color: orange;
+    background-color: #873d3d;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+#skills > .left > p a:hover {
+    background-color: #893636;
+    color: orangered;
+}
+
+#skills > .right {
+    float: right;
+    width: 50%;
+    padding: 40px;
+    /* background-color: #945050; */
+}
+
+#skills > .right > ul {
+    list-style: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+/* projects css */
+#projects {
+    margin-top: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    /* background-color: #014638; */
+    background-color: transparent;
+    background-attachment: fixed;
 }
 
 #projects > h1 {
@@ -192,15 +315,23 @@ body {
     display: none;
 }
 
+
+/* achievements css */
+#achievements {
+    display: none;
+}
+
+
+/* contact css */
 #contact {
     /* background-color: #61958b; */
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 #contact > h1 {
     font-size: 40px;
     padding-top: 25px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     text-decoration: underline;
     display: flex;
     justify-content: center;
@@ -238,6 +369,8 @@ hr {
     background-color: #014638;
 }
 
+
+/* footer */
 .footer > p{
     text-align: center;
     font-family: monospace;
@@ -245,30 +378,44 @@ hr {
 }
 
 
+/* for mobile */
 @media screen and (max-width: 426px) {
     body {
         max-width: 100%;
         max-height: 100%;
     }
 
-    #navbar #left {
+    #navbar {
+        background: transparent;
+        position: absolute;
+    }
+
+    #menu {
         display: none;
     }
 
+
+    /* navigation css */
     #navbar {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
     
-    #namaste {
+    #logo {
         border-radius: 3px;
-        margin-left: -50px !important;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+
+    /* introduction css */
     .site-header {
         text-align: center;
+        margin-top: 3rem;
     }
 
     .site-header-content h1{
@@ -287,6 +434,36 @@ hr {
         padding: 7px 15px;
     }
 
+    #more-about-me a:hover {
+        /* color: #361c1c; */
+        font-size: 18px;
+    }
+
+
+    /* about me */
+    #about_me {
+        padding-top: 2rem;
+    }
+
+    #about_me h1 {
+        font-size: 35px;
+    }
+
+    #about_me p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+
+    /* education */
+    #education {
+        padding-top: 3rem;
+    }
+
+    #education h1 {
+        margin-bottom: 2rem;
+    }
+
     #education div {
         flex-direction: column;
     }
@@ -300,17 +477,23 @@ hr {
         margin-top: 1px;
     }
 
-    #education > h1, #projects > h1,#contact > h1 {
-        font-size: 30px;
+    #education > h1, #projects > h1, #contact > h1 {
+        font-size: 35px;
     }
 
     #education div div {
         width: 207px;
         height: 175px;
+        margin-top: 50px;
+    }
+
+    #pg {
+        margin-top: 0 !important;
     }
     
     #education div div:hover {
         background-color: transparent;
+        color: transparent;
     }
 
     #education div div h3 {
@@ -320,6 +503,66 @@ hr {
     #education div div p {
         font-size: 16px;
         color: #8f5b5b;
+    }
+
+
+    /* skills */
+    #skills {
+        all: unset;
+        padding-top: 5rem;
+        /* background-color: #014638; */
+        background-color: #373030;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skill {
+        font-size: 35px;
+    }
+
+    #skills > .left, #skills > .right {
+        width: 100%;
+    }
+
+    #skills > .left {
+        padding: 30px;
+        padding-top: 25px;
+    }
+
+    #skills .left h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #skills p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #skills > .left > p a {
+        padding: 5px;
+    }
+
+    #skills > .right {
+        padding: 30px;
+        padding-top: 0;
+        padding-left: initial;
+    }
+
+    #skills > .right > ul {
+        font-size: 20px;
+    }
+
+
+    /* projects */
+    #projects {
+        margin-top: 0;
+    }
+
+    #project {
+        margin-bottom: 4rem;
     }
 
     #projects .center {
@@ -334,6 +577,14 @@ hr {
         margin: 10px 0;
     }
 
+
+    /* achievements */
+    #achievements {
+        display: none;
+    }
+
+
+    /* contact */
     #contact {
         margin-top: 1rem;
     }
@@ -364,6 +615,8 @@ hr {
         color: #873d3d;
     }
 
+    
+    /* footer */
     .footer > p {
         font-size: larger;
     }
