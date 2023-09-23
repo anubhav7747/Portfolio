@@ -354,6 +354,7 @@ section {
 }
 
 #achievements > div div h1 {
+    color: #fff;
     text-decoration: underline;
     font-size: 30px;
 }
