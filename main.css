@@ -326,6 +326,7 @@ section {
 
 #achievement {
     font-size: 40px;
+    color: #8a4646;
     text-decoration: underline;
     display: flex;
     justify-content: center;
@@ -336,6 +337,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
 }
 
 #achievements > div div {
@@ -354,7 +356,6 @@ section {
 }
 
 #achievements > div div h1 {
-    color: #fff;
     text-decoration: underline;
     font-size: 30px;
 }
