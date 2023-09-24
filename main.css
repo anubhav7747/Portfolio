@@ -1,3 +1,10 @@
+/* variables */
+:root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -86,6 +93,10 @@ body {
     color: #fff;
     font-size: 29px;
     font-family: monospace;
+}
+
+#mobile-menu {
+    display: none;
 }
 
 section {
@@ -241,8 +252,8 @@ section {
 
 #skills > .left {
     float: left;
-    width: 50%;
-    padding: 40px;
+    width: 55%;
+    padding: 40px 55px;
     /* background-color: #873d3d; */
     color: #fff;
     font-family: monospace;
@@ -268,8 +279,8 @@ section {
 
 #skills > .right {
     float: right;
-    width: 50%;
-    padding: 40px;
+    width: 45%;
+    padding: 40px 60px;
     /* background-color: #945050; */
 }
 
@@ -311,10 +322,6 @@ section {
     margin: 15px 15px;
 }
 
-.mobile-version {
-    display: none;
-}
-
 
 /* achievements css */
 #achievements {
@@ -342,7 +349,7 @@ section {
 
 #achievements > div div {
     background-color: #5b5858;
-    margin: 0 15px;
+    margin: 0 20px;
     padding: 0 15px;
     border-radius: 25px;
     text-align: center;
@@ -384,6 +391,7 @@ section {
 }
 
 #contact div {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,7 +399,7 @@ section {
 
 .height-width{
     width: 175px;
-    height: 100px;
+    height: 0;
     flex-direction: column;
     /* background-color: #d0b7b7; */
     /* border: 2px solid #014638; */
@@ -430,31 +438,53 @@ hr {
         max-height: 100%;
     }
 
-    #navbar {
-        background: transparent;
-        position: absolute;
-    }
-
-    #menu {
-        display: none;
-    }
-
 
     /* navigation css */
     #navbar {
+        background: transparent;
+        position: absolute;
+        /* position: fixed;
+        overflow: hidden; */
+    }
+
+    #navbar {
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-items: center; */
         padding: 0;
     }
     
     #logo {
+        /* height: 60px;
+        width: 60px; */
         border-radius: 3px;
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+        /* margin-left: 20px; */
     }
+    
+    #menu {
+        display: none;
+    }
+    
+    /* #mobile-menu {
+        display: block;
+        list-style: none;
+    }
+
+    #mobile-menu li a {
+        display: block;
+        text-decoration: none;
+        background-color: var(--gray);
+        color: #2f1d1d;
+        font-family: monospace;
+        font-size: 18px;
+        padding: 25px;
+    } */
 
 
     /* introduction css */
@@ -660,19 +690,16 @@ hr {
     }
 
     #contact div {
+        margin-top: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
-    }
-
-    .height-width img {
-        display: none;
     }
     
     .height-width {
         width: fit-content;
-        height: 30px;
+        height: 40px;
         /* background-color: #299f8c; */
-        margin: 2px 5px;
+        margin: 2px 10px;
     }
     
     .height-width h1 {
