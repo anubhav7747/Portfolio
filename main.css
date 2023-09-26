@@ -53,13 +53,6 @@ body {
     width: 100%;
 }
 
-/* #navbar h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #ad8484;
-    font-size: 35px;
-    letter-spacing: 2px;
-} */
-
 #logo {
     height: 75px;
     width: 75px;
@@ -96,6 +89,10 @@ body {
 }
 
 #mobile-menu {
+    display: none;
+}
+
+.closebtn, .openbtn {
     display: none;
 }
 
@@ -136,27 +133,23 @@ section {
     font-size: 25px;
 }
 
-#more-about-me {
+a#more_about_me {
     font-size: 25px;
     font-family: monospace;
     background-color: #014638;
     border: 1px solid #014638;
-    border-radius: 15px;
-}
-
-#more-about-me:hover {
-    background-color: #5b5858;
-}
-
-#more-about-me a {
-    color: #fff;
+    border-radius: 25px;
     text-decoration: none;
+    color: #fff;
     padding: 7px 20px;
 }
-
-#more-about-me a:hover {
-    /* color: #361c1c; */
-    font-size: 22px;
+ 
+a#more_about_me:hover {
+    background-color: #5b5858;
+    border: #5b5858;
+    color: #ff8800;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -468,23 +461,46 @@ hr {
     }
     
     #menu {
-        display: none;
+        margin: 0;
+        padding: 0;
+        /* background-color: #36383F; */
+        /* background-color: rgba(54, 56, 63); */
+        background-color: rgba(54, 56, 63, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
     }
     
-    /* #mobile-menu {
+    #menu li a {
+        color: #f9f9f9;
+        font-family: monospace;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+    
+    .closebtn {
         display: block;
-        list-style: none;
+        color: #818181;
+        text-decoration: none;
+        position: absolute;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
 
-    #mobile-menu li a {
+    .openbtn {
         display: block;
-        text-decoration: none;
-        background-color: var(--gray);
-        color: #2f1d1d;
-        font-family: monospace;
-        font-size: 18px;
-        padding: 25px;
-    } */
+        position: fixed;
+        padding: 0 5px;
+        font-size: 30px;
+    }
 
 
     /* introduction css */
@@ -501,17 +517,17 @@ hr {
         font-size: 16px;
     }
 
-    #more-about-me {
-        font-size: 20px;
-    }
-    
-    #more-about-me a {
-        padding: 7px 15px;
+    a#more_about_me:hover {
+        all: unset;
     }
 
-    #more-about-me a:hover {
-        /* color: #361c1c; */
-        font-size: 18px;
+    a#more_about_me {
+        all: unset;
+        font-size: 20px;
+        background-color: #014638;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 10px;
     }
 
 

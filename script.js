@@ -1,7 +1,20 @@
-// document.getElementById("menu").style.display = "block";
-// document.getElementById("mobile-menu").style.display = "none";
+// function myFun(x) {
+//     x.classList.toggle("change");
 
-// if ((navigator.userAgent.match(/iPhone/i)) || navigator.userAgent.match(/Android/i)) {
-//     document.getElementById("menu").style.display = "none";
-//     document.getElementById("mobile-menu").style.display = "block";
+//     let y = document.getElementById("menu");
+//     // let bodyy = document.getElementsByTagName("body")[0];
+
+//     if (y.style.display === "block") {
+//         y.style.display = "none";
+//     } else {
+//         y.style.display = "block";
+//     }
 // }
+
+function closeNav() {
+    document.getElementById("menu").style.width = "0%";
+}
+
+function openNav() {
+    document.getElementById("menu").style.width = "100%";
+}
