@@ -88,10 +88,6 @@ body {
     font-family: monospace;
 }
 
-#mobile-menu {
-    display: none;
-}
-
 .closebtn, .openbtn {
     display: none;
 }
@@ -438,9 +434,6 @@ hr {
         position: absolute;
         /* position: fixed;
         overflow: hidden; */
-    }
-
-    #navbar {
         width: 100%;
         height: 100%;
         display: flex;
