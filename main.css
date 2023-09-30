@@ -429,6 +429,13 @@ hr {
         max-height: 100%;
     }
 
+    #logo {
+        height: 50px;
+        width: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     #menu li {
         margin: 0 20px;
         font-size: 25px;
