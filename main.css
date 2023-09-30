@@ -123,10 +123,14 @@ section {
 
 .site-header-content h1 {
     font-size: 30px;
+    /* text-align: justify; */
+    text-align: center;
 }
 
 .site-header-content h2 {
     font-size: 25px;
+    /* text-align: justify; */
+    text-align: center;
 }
 
 #more_about_me {
