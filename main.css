@@ -390,11 +390,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .height-width{
-    width: 175px;
-    height: 0;
+    width: 150px;
+    /* height: 0; */
     flex-direction: column;
     /* background-color: #d0b7b7; */
     /* border: 2px solid #014638; */
@@ -423,6 +424,15 @@ hr {
     text-align: center;
     font-family: monospace;
     font-size: 20px;
+}
+
+
+/* for desktop view */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+    #logo {
+        height: 60px;
+        width: 60px;
+    }
 }
 
 
@@ -476,7 +486,7 @@ hr {
 }
 
 
-/* for mobile */
+/* for mobile view */
 /* @media screen and (max-width: 426px) { */
 /* @media screen and (max-device-width: 480px) and (orientation: portrait) { */
 @media screen and (max-device-width: 640px) {
