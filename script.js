@@ -1,13 +1,19 @@
-// for closing menu
-function closeNav() {
-    document.getElementById("menu").style.width = "0%";
-}
-
+const menu = document.getElementById("menu");
 
 // for opening menu
 function openNav() {
-    document.getElementById("menu").style.width = "100%";
+    menu.style.width = "100%";
 }
+
+document.addEventListener("click", openNav);
+
+
+// for closing menu
+function closeNav() {
+    menu.style.width = "0%";
+}
+
+document.addEventListener("click", closeNav);
 
 
 // know more about me
