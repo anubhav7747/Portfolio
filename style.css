@@ -1,0 +1,604 @@
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(23, 96, 31);
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #299f8c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5b5858;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #605050;
+}
+
+
+/* navigation bar */
+#navbar {
+    background-color: #373030;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#namaste {
+    height: 50px;
+    border-radius: 2px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+
+ul > li {
+    margin: 15px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    font-size: 27px;
+    font-family: monospace;
+    color: #fff;
+}
+
+ul > li > a:hover {
+    text-decoration: underline;
+    color: #8f5b5b;
+}
+
+
+/* home */
+.profile-pic {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: #05622d 5px 5px 10px;
+    margin-top: 6em;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+}
+
+.site-header {
+    padding: 6em 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header-content {
+    margin: 1em;
+    text-align: center;
+}
+
+.site-header-content h1 {
+    margin-top: 1em;
+    font-size: 30px;
+}
+
+.site-header-content h2 {
+    margin-top: 1em;
+    font-size: 25px;
+}
+
+#more_about_me {
+    margin-top: 1em;
+    font-size: 18px;
+    font-family: sans-serif;
+    background: #846c68;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+}
+
+#more_about_me:hover {
+    background-color: #846c80;
+    color: #234431;
+}
+
+
+/* about me */
+#about_me {
+    padding: 5.5em 1em;
+    background-color: #234431;
+    background-attachment: fixed;
+}
+
+#about_me > h1, #education > h1, #skills > h1, #projects > h1, #hosting > h1, #achievements > h1, #contact > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    color: burlywood;
+}
+
+#about_me p {
+    padding: 0 20px;
+    text-align: justify;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    font-family: monospace;
+}
+
+.first {
+    margin-top: 2em;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+
+/* education */
+#education {
+    padding: 5.5em 1em;
+    background-attachment: fixed;
+}
+
+#education > article {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education > article > div {
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 0 1rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: #5b5858;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+}
+
+#education > article > div:hover {
+    background-color: #5b5858;
+}
+
+#education h3 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+
+#education p {
+    font-size: 20px;
+    margin-bottom: 0.75rem;
+    line-height: 30px;
+}
+
+
+/* skills */
+#skills {
+    padding: 5.5em 1em;
+    background-color: #234431;
+    background-attachment: fixed;
+    height: 26em;
+}
+
+#skills > .left {
+    font-family: monospace;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#skills > .right {
+    float: right;
+    width: 45%;
+}
+
+#skills > .left > p {
+    line-height: 27px;
+}
+
+#skills > .left > p > a {
+    text-decoration: none;
+    color: orange;
+    background-color: #873d3d;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+#skills > .left > p > a:hover {
+    background-color: #893636;
+    color: orangered;
+}
+
+#skills > .right > ul {
+    list-style: none;
+    font-size: 25px;
+    color: #fff;
+    flex-direction: column;
+    align-items: normal;
+}
+
+
+/* projects */
+#projects {
+    padding: 5.5em 1em;
+    background-attachment: fixed;
+}
+
+#projects > article {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#projects .size {
+    height: 250px;
+    width: 425px;
+    margin: 1rem;
+    border-radius: .5rem;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+}
+
+#projects > article > div > h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    color: #1d094c;
+}
+
+
+/* hosting */
+#hosting {
+    padding: 5.5em 1em;
+    background-color: #234431;
+    background-attachment: fixed;
+}
+
+#hosting > article > p {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    font-family: monospace;
+}
+
+#hosted {
+    justify-content: center;
+}
+
+#hosted > li {
+    background-color: #5b5858;
+    margin: 2.5em 2em 0 2em;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+}
+
+#hosted > li > a {
+    font-size: 25px;
+}
+
+#hosted > li:hover {
+    background-color: #05622d;
+}
+
+#hosted > li > a:hover {
+    color: #234431;
+}
+
+
+/* achievements */
+#achievements {
+    padding: 5.5em 1em;
+    background-attachment: fixed;
+}
+
+#achievements > article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#achievements > article > div {
+    background-color: #5b5858;
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    /* text-align: center; */
+    width: 25%;
+    height: fit-content;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+}
+
+#achievements > article > div:hover {
+    background-color: #299f8c;
+}
+
+#achievements > article > div > h1 {
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: .5rem;
+    /* text-align: left; */
+}
+
+#achievements > article > div > p {
+    font-size: 19px;
+    font-family: monospace;
+    color: #fff;
+    line-height: 25px;
+    /* text-align: left; */
+}
+
+
+/* contact */
+#contact {
+    padding: 5.5em 1em;
+    background-color: #234431;
+    background-attachment: fixed;
+}
+
+#contact > article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+#contact > article > div {
+    flex-direction: column;
+    margin: 0 1.5rem;
+}
+
+#contact > article > div > p > a {
+    text-decoration: none;
+    color: #1d094c;
+    font-size: 1.75rem;
+    font-family: sans-serif;
+    line-height: 2.5rem;
+}
+
+#contact > article > div > p > a:hover {
+    text-decoration: underline;
+    color: #945050;
+}
+
+
+/* footer */
+.footer > p {
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 1rem 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body, html {
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
+    #namaste {
+        height: 40px;
+    }
+
+    ul > li {
+        margin: 7px;
+    }
+
+    ul > li > a {
+        font-size: 19px;
+    }
+
+
+    /* home */
+    .profile-pic {
+        height: 175px;
+        width: 175px;
+        margin-top: 4em;
+    }
+
+    .site-header-content h1 {
+        font-size: 25px;
+    }
+
+    .site-header-content h2 {
+        font-size: 20px;
+    }
+
+    #more_about_me {
+        margin-top: .75em;
+        font-size: 17px;
+        padding: .75rem;
+    }
+
+    #more_about_me:hover {
+        background-color: #846c68;
+        color: #fff;
+    }
+
+
+    /* about me */
+    #about_me, #education, #skills, #projects, #hosting, #achievements, #contact {
+        padding: 4.5em .75em;
+    }
+
+    #about_me > h1, #education > h1, #skills > h1, #projects > h1, #hosting > h1, #achievements > h1, #contact > h1 {
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+
+    #about_me p {
+        padding: 0 15px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .first {
+        margin-top: 1em;
+    }
+    
+    .margin-top {
+        margin-top: .75rem;
+    }
+
+
+    /* education */
+    #education {
+        background: #5b5858;
+    }
+
+    #education > article {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #education > article > div {
+        height: 200px;
+        margin: 1.25em .75rem;
+        padding: 0.75rem;
+        background-color: #3f3f3f;
+    }
+
+    #education > article > div:hover {
+        background-color: #3f3f3f;
+    }
+
+
+    /* skills */
+    #skills {
+        height: fit-content;
+    }
+
+    #skills > .left, #skills > .right {
+        float: none;
+        width: 95%;
+        text-align: justify;
+    }
+
+    #skills > .left {
+        padding: 1rem;
+        font-size: 17px;
+    }
+
+    #skills > .left > p {
+        line-height: 25px;
+    }
+
+    #skills > .right > ul {
+        font-size: 18px;
+        padding-left: 0.5rem;
+    }
+
+
+    /* projects */
+    #projects .size {
+        height: 175px;
+        width: 350px;
+        margin: .75rem;
+    }
+
+    #projects > article > div > h2 {
+        margin-bottom: 1.5rem;
+    }
+
+
+    /* hosting */
+    #hosting > article > p {
+        padding: 0 0.5rem;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    #hosted > li {
+        margin: 2em 1.5em 0 1.5em;
+        padding: 0.75rem;
+        border-radius: 1rem;
+    }
+
+    #hosted > li > a {
+        font-size: 20px;
+    }
+
+    #hosted > li:hover {
+        background-color: #5b5858;
+    }
+    
+    #hosted > li > a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    /* achievements */
+    #achievements > article {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #achievements > article > div {
+        margin: 1rem auto;
+        padding: 1.5rem;
+        border-radius: 25px;
+        width: 45%;
+    }
+
+    #achievements > article > div:hover {
+        background: #5b5858;
+    }
+    
+    #achievements > article > div > h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #achievements > article > div > p {
+        font-size: 18px;
+    }
+
+
+    /* contact */
+    #contact > article {
+        margin-top: 1.5rem;
+    }
+
+    #contact > article > div {
+        margin: 0 1.25rem;
+    }
+
+    #contact > article > div > p > a {
+        font-size: 1.5rem;
+    }
+
+
+    /* footer */
+    .footer > p {
+        font-size: 20px;
+    }
+}

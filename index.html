@@ -1,268 +1,280 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Anubhav Tiwari Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="/images/icon.ico">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" href="/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-    </head>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS843Y12XB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        
-        function gtag(){dataLayer.push(arguments);}
-        
-        gtag('js', new Date());
-
-        gtag('config', 'G-PS843Y12XB');
-    </script>
-    
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubhav Tiwari Portfolio</title>
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
         <nav id="navbar">
-            
-            <!-- <h1>Namaste</h1> -->
-            <img src="/images/Namaste.jpg" alt="namaste" id="logo">
-            
-            <!-- Menu -->
-            <ul id="menu">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><img src="/images/Namaste.jpg" alt="namste" id="namaste"></li>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#about_me">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#hosting">Hosting</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#links">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            
-            <span class="openbtn" onclick="openNav()">&#9776;</span>
         </nav>
+    </header>
+
+
+    <!-- home -->
+    <section class="site-header" id="home">
+        <!-- profile picture -->
+        <img class="profile-pic" src="https://avatars.githubusercontent.com/u/77168708?v=4" alt="profile picture">
         
+        <!-- introduction -->
+        <div class="site-header-content">
+            <h1>Hi! I am Anubhav Tiwari, I am 23 years old, currently living in Gorakhpur, India.</h1>
+            <h2>I am learning full stack development. Watch this space for my upcoming projects.</h2>
+        </div>
 
-        <section class="site-header" id="home">
+        <!-- More About Me -->
+        <a id="more_about_me">Know More About Me</a>
+    </section>
+
+
+    <!-- About Me -->
+    <section id="about_me">
+        <h1>About Me</h1>
             
-            <!-- profile picture -->
-            <img class="profile-pic" src="https://avatars.githubusercontent.com/u/77168708?v=4" alt="profile picture">
-            
-            <!-- introduction -->
-            <div class="site-header-content">
-                <h1>Hi! I am Anubhav Tiwari, I am 23 years old, currently living in Gorakhpur, India.</h1>
-                <h2>I am learning full stack development. Watch this space for my upcoming projects.</h2>
-            </div>
+        <article>
+            <p class="first">Hi! I am currently pursuing a master&apos;s degree in computer applications from Madan Mohan Malaviya University of Technology, Gorakhpur. I have completed my graduation in computer applications from CSJM UNIVERSITY Kanpur in the year 2022.</p>
 
-            <!-- More About Me -->
-            <a href="#about_me" id="more_about_me">Know More About Me</a>
-        </section>
+            <p class="margin-top">There are a few projects that I've made, such as a portfolio, books that I've read so far, and documentation pages. Each project is hosted on Netlify.</p>
 
-
-        <!-- About Me -->
-        <section id="about_me">
-            <h1>About Me</h1>
-            
-            <article>
-                <p class="justifyContent">Hi! I am pursuing a Master's degree in Computer Applications (MCA) from Madan Mohan Malaviya University of Technology in Gorakhpur. I have completed my Bachelor of Computer Applications (BCA) from University Institute of Engineering and Technology (U.I.E.T.), Kanpur University (main campus), Kanpur in year 2022.</p>
-
-                <p>In school, I was a member of the cricket and football teams, and in college, I was a member of the football team.</p>
-
-                <p><u>Hobbies</u>: Besides reading books, I enjoy listening to music, podcasts, and watching movies.</p>
-            </article>
-        </section>
-
-
-        <!-- Education -->
-        <section id="education">
-            <h1>Education</h1>
-            
-            <div>
-                <!-- Post-Graduation -->
-                <div id="pg">
-                    <h3>Post-Graduation</h3>
-                    <p class="mar"><strong>University:</strong> MMMUT, Gorakhpur</p>
-                    <p class="mar"><strong>Session:</strong> 2022-24</p>
-                    <p class="mar"><strong>CGPA:</strong> 8.02</p>
-                </div>
-                
-                <!-- Under-Graduate -->
-                <div id="ug">
-                    <h3>Graduation</h3>
-                    <p class="mar"><strong>University:</strong> UIET, CSJM University, Kanpur</p>
-                    <p class="mar"><strong>Session:</strong> 2019-22</p>
-                    <p class="mar"><strong>Percentage:</strong> 71.61</p>
-                </div>
-                
-                <!-- 12th -->
-                <div id="twelve">
-                    <h3>12th</h3>
-                    <p class="mar"><strong>School:</strong> St. Lawrence School, Unnao</p>
-                    <p class="mar"><strong>Passing Year:</strong> 2018</p>
-                    <p class="mar"><strong>Percentage:</strong> 65.20</p>
-                </div>
-                
-                <!-- 10th -->
-                <div id="tenth">
-                    <h3>10th</h3>
-                    <p class="mar"><strong>School:</strong> St. Lawrence School, Unnao</p>
-                    <p class="mar"><strong>Passing Year:</strong> 2016</p>
-                    <p class="mar"><strong>Percentage:</strong> 66.33</p>    
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Skills -->
-        <section id="skills">
-            <h1 id="skill">Skills</h1>
-
-            <div class="left">
-                <h1>My creative skills and experiences.</h1>
-                
-                <p class="justifyContent">Hello, I'm Anubhav! I am pursuing a Master's degree in Computer Applications (MCA) from Madan Mohan Malaviya University of Technology in Gorakhpur.</p>
-
-                <p class="justifyContent">As a dedicated, self-motivated individual with good interpersonal skills, I am self-driven and disciplined. Looking for opportunities that will allow me to utilize my skills effectively and allow me to grow. What I might lack in skills I make up for with my determination to learn. Open to new experiences and opportunities!</p>
-
-                <p>I am a frontend developer. You can check out my projects at GitHub.</p>
-
-                <p>Link: <a href="https://github.com/anubhav7747">anubhav7747</a></p>
-            </div>
-
-            <div class="right">
-                <ul>
-                    <li><span>&#10031;&nbsp; Web Development</span></li>
-                    <li><span>&#10031;&nbsp; C/C++</span></li>
-                    <li><span>&#10031;&nbsp; MySQL</span></li>
-                </ul>
-            </div>
-        </section>
-
-
-        <!-- Projects -->
-        <section id="projects">
-            <h1 id="project">Projects</h1>
-
-            <div class="center">
-                <div class="">
-                    <a href="https://github.com/anubhav7747/Portfolio" target="_blank"><img src="/images/portfolio.png" alt="portfolio" class="size"></a>
-                </div>
+            <p class="margin-top">Listening to music and reading books are my hobbies. A certificate for New Generation Leader and ISC Senior Boys Football Tournament was awarded to me during my school years. I am currently learning a foreign language.</p>
+        </article>
+    </section>
     
-                <div class="">
-                    <a href="https://github.com/anubhav7747/JavaScript-Documentation-Page" target="_blank"><img src="/images/documentation.png" alt="documentation page" class="size"></a>
-                </div>
-                        
-                <div class="">
-                    <a href="https://github.com/anubhav7747/Landing-Page-Template-2" target="_blank"><img src="/images/landing-page-template.png" alt="landing page landing-page-template" class="size"></a>
-                </div>
+
+    <!-- Education -->
+    <section id="education">
+        <h1>Education</h1>
+                
+        <article>
+            <!-- Post-Graduation -->
+            <div id="pg">
+                <h3>Post-Graduation</h3>
+                <p class="mar"><strong>University:</strong> MMMUT, Gorakhpur</p>
+                <p class="mar"><strong>Session:</strong> 2022-24</p>
+                <p class="mar"><strong>CGPA:</strong> 8.02</p>
             </div>
                     
-            <div class="center">
-                <div class="">
-                    <a href="https://github.com/anubhav7747/Calculator" target="_blank"><img src="/images/calculator.png" alt="calculator" class="size"></a>
-                </div>
-                        
-                <div class="">
-                    <a href="https://github.com/anubhav7747/ProductLandingPage" target="_blank"><img src="/images/product-landing-page.png" alt="product landing page" class="size"></a>
-                </div>
+            <!-- Under-Graduate -->
+            <div id="ug">
+                <h3>Graduation</h3>
+                <p class="mar"><strong>University:</strong> UIET, CSJM University, Kanpur</p>
+                <p class="mar"><strong>Session:</strong> 2019-22</p>
+                <p class="mar"><strong>Percentage:</strong> 71.61</p>
             </div>
-        </section>
+                    
+            <!-- 12th -->
+            <div id="twelve">
+                <h3>12th</h3>
+                <p class="mar"><strong>School:</strong> St. Lawrence School, Unnao</p>
+                <p class="mar"><strong>Passing Year:</strong> 2018</p>
+                <p class="mar"><strong>Percentage:</strong> 65.20</p>
+            </div>
+                    
+            <!-- 10th -->
+            <div id="tenth">
+                <h3>10th</h3>
+                <p class="mar"><strong>School:</strong> St. Lawrence School, Unnao</p>
+                <p class="mar"><strong>Passing Year:</strong> 2016</p>
+                <p class="mar"><strong>Percentage:</strong> 66.33</p>    
+            </div>
+        </article>
+    </section>
 
 
-        <!-- Achievements -->
-        <section id="achievements">
-            <h1 id="achievement">Achievements</h1>
+    <!-- Skills -->
+    <section id="skills">
+        <h1 id="skill">Skills</h1>
+    
+        <div class="left">
+            <h1>My creative skills and experiences.</h1>
+                    
+            <p>Hello, I'm Anubhav! I am pursuing a Master's degree in Computer Applications (MCA) from Madan Mohan Malaviya University of Technology in Gorakhpur.</p>
+    
+            <p class="margin-top">As a dedicated, self-motivated individual with good interpersonal skills, I am self-driven and disciplined. Looking for opportunities that will allow me to utilize my skills effectively and allow me to grow. What I might lack in skills I make up for with my determination to learn. Open to new experiences and opportunities!</p>
+    
+            <p class="margin-top">I am a frontend developer. You can check out my projects at GitHub.</p>
+    
+            <p class="margin-top">Link: <a href="https://github.com/anubhav7747" target="_blank">anubhav7747</a></p>
+        </div>
+    
+        <div class="right">
+            <ul>
+                <li><span>&#10031;&nbsp; Web Development</span></li>
+                <li><span>&#10031;&nbsp; C/C++</span></li>
+                <li><span>&#10031;&nbsp; MySQL</span></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h1 id="project">Projects</h1>
+    
+        <article>
+            <div>
+                <a href="https://github.com/anubhav7747/Portfolio" target="_blank"><img src="/images/portfolio.png" alt="portfolio" class="size"></a>
+                <h2>Portfolio</h2>
+            </div>
+                    
+            <div>
+                <a href="https://github.com/anubhav7747/JavaScript-Documentation-Page" target="_blank"><img src="/images/documentation.png" alt="documentation page" class="size"></a>
+                <h2>JavaScript Documentation Page</h2>
+            </div>
+                    
+            <div>
+                <a href="https://github.com/anubhav7747/Books" target="_blank"><img src="/images/books.png" alt="books" class="size"></a>
+                <h2>Books - Read till now</h2>
+            </div>
 
             <div>
-                <div id="hackerRank">
-                    <h1>HackerRank</h1>
-                    <p>5 star in C++</p>
-                    <p>5 star in SQL</p>
-                    <p>3 star in Java</p>
-                    <p>2 star in Python</p>
-                    <p>2 star in Problem Solving</p>
-                    <p>SQL (Basic) certificate</p>
-                </div>
-                
-                <div id="codeChef">
-                    <h1>CodeChef</h1>
-                    <p>1 star at codechef</p>
-                    <p>1388 codechef highest rating</p>
-                    <p>350 fully solved problems</p>
-                </div>
-
-                <div id="linkedin">
-                    <h1>LinkedIn</h1>
-                    <p>C++ - Passed LinkedIn Skill Assessment</p>
-                    <p>MySQL - Passed LinkedIn Skill Assessment</p>
-                    <p>HTML - Passed LinkedIn Skill Assessment</p>
-                    <p>CSS - Passed LinkedIn Skill Assessment</p>
-                    <p>Front-End Development - Passed LinkedIn Skill Assessment</p>
-                </div>
-
-                <div id="freecodecamp">
-                    <h1>freeCodeCamp</h1>
-                    <p>Responsive Web Design certificate</p>
-                </div>
+                <a href="https://github.com/anubhav7747/Landing-Page-Template-2" target="_blank"><img src="/images/landing-page-template.png" alt="landing page landing-page-template" class="size"></a>
+                <h2>Landing Page Template</h2>
             </div>
-        </section>
+                    
+            <div>
+                <a href="https://github.com/anubhav7747/Calculator" target="_blank"><img src="/images/calculator.png" alt="calculator" class="size"></a>
+                <h2>Calculator</h2>
+            </div>
+                            
+            <div>
+                <a href="https://github.com/anubhav7747/ProductLandingPage" target="_blank"><img src="/images/product-landing-page.png" alt="product landing page" class="size"></a>
+                <h2>Product Landing Page</h2>
+            </div>
+        </article>
+    </section>
+    
+    
+    <!-- Hosting -->
+    <section id="hosting">
+        <h1>Hosting</h1>
+
+        <article>
+            <p class="first">These are the projects hosted on netlify.</p>
+
+            <ul id="hosted">
+                <li><a href="https://anubhavtiwari-portfolio.netlify.app/" target="_blank">Portfolio</a></li>
+                <li><a href="https://calculator-tarsier.netlify.app/" target="_blank">Calculator</a></li>
+                <li><a href="https://documentation-of-javascript.netlify.app/" target="_blank">Documentation Page</a></li>
+                <li><a href="https://booksreadtillnow.netlify.app/" target="_blank">Books - Read till now</a></li>
+            </ul>
+        </article>
+    </section>
 
 
-        <!-- Contact -->
-        <section id="contact">
-            <!-- <h1 id="links">Links</h1> -->
-            <h1 id="links">Get in touch</h1>
+    <!-- Achievements -->
+    <section id="achievements">
+        <h1 id="achievement">Achievements</h1>
+
+        <article>
+            <div id="hackerRank">
+                <h1>HackerRank</h1>
+                <p>5 star in C++</p>
+                <p>5 star in SQL</p>
+                <p>3 star in Java</p>
+                <p>2 star in Python</p>
+                <p>2 star in Problem Solving</p>
+                <p>SQL (Basic) certificate</p>
+            </div>
+                
+            <div id="codeChef">
+                <h1>CodeChef</h1>
+                <p>1 star at codechef</p>
+                <p>1388 codechef highest rating</p>
+                <p>350 fully solved problems</p>
+            </div>
+
+            <div id="linkedin">
+                <h1>LinkedIn</h1>
+                <p>C++ - Passed LinkedIn Skill Assessment</p>
+                <p>MySQL - Passed LinkedIn Skill Assessment</p>
+                <p>HTML - Passed LinkedIn Skill Assessment</p>
+                <p>CSS - Passed LinkedIn Skill Assessment</p>
+                <p>Front-End Development - Passed LinkedIn Skill Assessment</p>
+            </div>
+
+            <div id="freecodecamp">
+                <h1>freeCodeCamp</h1>
+                <p>Responsive Web Design certificate</p>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <!-- <h1 id="links">Links</h1> -->
+        <h1 id="links">Get in touch</h1>
             
+        <article>
+            <!-- Email -->
             <div>
-                <!-- Email -->
-                <div class="height-width">
-                    <h1><a href="mailto:anubhavtiwari4647@gmail.com">Send Email</a></h1>
-                </div>
-
-                <!-- Github link -->
-                <div class="height-width">
-                    <h1><a href="https://github.com/anubhav7747" target="_blank">Github</a></h1>
-                </div>
-
-                <!-- LinkedIn -->
-                <div class="height-width">
-                    <h1><a href="https://www.linkedin.com/in/anubhavtiwari4647/" target="_blank">LinkedIn</a></h1>
-                </div>
-                
-                <!-- Instagram -->
-                <div class="height-width">
-                    <h1><a href="https://www.instagram.com/anubhavtiwari_47/" target="_blank">Instagram</a></h1>
-                </div>
-                
-                <!-- HackerRank -->
-                <div class="height-width">
-                    <h1><a href="https://www.hackerrank.com/profile/anubhavtiwari47" target="_blank">HackerRank</a></h1>
-                </div>
-                
-                <!-- CodeChef -->
-                <div class="height-width">
-                    <h1><a href="https://www.codechef.com/users/anubhavtiwari7" target="_blank">CodeChef</a></h1>
-                </div>
-                
-                <!-- Twitter -->
-                <div class="height-width">
-                    <h1><a href="https://twitter.com/AnubhavT16" target="_blank">Twitter</a></h1>
-                </div>
-
-                <!-- Replit -->
-                <div class="height-width">
-                    <h1><a href="https://replit.com/@AnubhavTiwari7" target="_blank">Replit</a></h1>
-                </div>
+                <p><a href="mailto:anubhavtiwari4647@gmail.com">Send Email</a></p>
             </div>
-        </section>
 
-        <hr>
+            <!-- Github link -->
+            <div>
+                <p><a href="https://github.com/anubhav7747" target="_blank">Github</a></p>
+            </div>
 
-        <footer class="footer">
-            <p>&copy; 2023 By Anubhav Tiwari.</p>
-        </footer>
+            <!-- LinkedIn -->
+            <div>
+                <p><a href="https://www.linkedin.com/in/anubhavtiwari4647/" target="_blank">LinkedIn</a></p>
+            </div>
 
-        <script src="/script.js"></script>
-    </body>
+            <!-- Linktree -->
+            <div>
+                <p><a href="https://linktr.ee/anubhavtiwari_47" target="_blank">Linktree</a></p>
+            </div>
+                
+            <!-- Instagram -->
+            <div>
+                <p><a href="https://www.instagram.com/anubhavtiwari_47/" target="_blank">Instagram</a></p>
+            </div>
+                
+            <!-- HackerRank -->
+            <div>
+                <p><a href="https://www.hackerrank.com/profile/anubhavtiwari47" target="_blank">HackerRank</a></p>
+            </div>
+                
+            <!-- CodeChef -->
+            <div>
+                <p><a href="https://www.codechef.com/users/anubhavtiwari7" target="_blank">CodeChef</a></p>
+            </div>
+                
+            <!-- Twitter -->
+            <div>
+                <p><a href="https://twitter.com/AnubhavT16" target="_blank">Twitter</a></p>
+            </div>
+
+            <!-- Replit -->
+            <div>
+                <p><a href="https://replit.com/@AnubhavTiwari7" target="_blank">Replit</a></p>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- copyright -->
+    <footer class="footer">
+        <p>&copy; 2023 by Anubhav Tiwari. All rights reserved.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
 </html>
