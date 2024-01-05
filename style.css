@@ -608,3 +608,27 @@ ul > li > a:hover {
         font-size: 20px;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    #namaste {
+        height: 25px;
+    }
+
+    ul > li {
+        margin: 5px;
+    }
+
+    ul > li > a {
+        font-size: 15px;
+    }
+    
+    #hosting > article > p {
+        margin-top: 1.5rem;
+    }
+
+    #hosted {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
