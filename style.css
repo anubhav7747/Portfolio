@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: rgb(23, 96, 31);
+    /* background-color: rgb(23, 96, 31); */
+    background: linear-gradient(to left bottom, lightgreen, lightseagreen, lightgreen);
     width: 100%;
     height: 100%;
 }
@@ -28,7 +29,8 @@ body {
 
 /* navigation bar */
 #navbar {
-    background-color: #373030;
+    /* background-color: #373030; */
+    background: lightseagreen;
     position: fixed;
     top: 0;
     width: 100%;
@@ -103,45 +105,50 @@ ul > li > a:hover {
 }
 
 #more_about_me {
+    width: 20%;
     margin-top: 1em;
-    font-size: 18px;
+    text-align: center;
+    font-size: 19px;
     font-family: sans-serif;
     background: #846c68;
     border: none;
     border-radius: 25px;
-    padding: 1rem;
+    padding: 1em;
     color: #fff;
     cursor: pointer;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+    transition: background-color 0.3s ease-in-out;
 }
 
 #more_about_me:hover {
     background-color: #846c80;
-    color: #234431;
+    /* color: #234431; */
 }
 
 
 /* about me */
 #about_me {
     padding: 5.5em 1em;
-    background-color: #234431;
+    /* background-color: #234431; */
+    background: rgba(255, 255, 255, 0.3);
     background-attachment: fixed;
 }
 
 #about_me > h1, #education > h1, #skills > h1, #projects > h1, #hosting > h1, #achievements > h1, #contact > h1 {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 2rem;
     text-decoration: underline;
-    color: burlywood;
+    color: rgb(182, 129, 58);
 }
 
 #about_me p {
-    padding: 0 20px;
+    padding: 5px 35px;
     text-align: justify;
     font-size: 22px;
     line-height: 30px;
-    color: #fff;
+    /* color: #fff; */
+    color: #0f5a97;
     font-family: monospace;
 }
 
@@ -171,17 +178,19 @@ ul > li > a:hover {
     width: 300px;
     height: 250px;
     border-radius: 25px;
-    margin: 0 1rem;
+    margin: 1rem;
     padding: 1rem;
     text-align: center;
     cursor: pointer;
-    background-color: #5b5858;
-    box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+    /* background-color: #5b5858; */
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5);
 }
 
-#education > article > div:hover {
+/* #education > article > div:hover {
     background-color: #5b5858;
-}
+} */
 
 #education h3 {
     font-size: 25px;
@@ -199,7 +208,8 @@ ul > li > a:hover {
 /* skills */
 #skills {
     padding: 5.5em 1em;
-    background-color: #234431;
+    /* background-color: #234431; */
+    background: rgba(255, 255, 255, 0.2);
     background-attachment: fixed;
     height: 26em;
 }
@@ -207,15 +217,17 @@ ul > li > a:hover {
 #skills > .left {
     font-family: monospace;
     float: left;
-    width: 50%;
-    padding: 20px;
-    color: #fff;
+    width: 52%;
+    padding: 20px 25px 20px 18px;
+    /* color: #fff; */
+    color: #0f5a97;
     font-size: 18px;
+    text-align: justify;
 }
 
 #skills > .right {
     float: right;
-    width: 45%;
+    width: 40%;
 }
 
 #skills > .left > p {
@@ -224,21 +236,24 @@ ul > li > a:hover {
 
 #skills > .left > p > a {
     text-decoration: none;
-    color: orange;
+    /* color: orange; */
+    color: #fff;
     background-color: #873d3d;
     padding: 7px;
     border-radius: 7px;
 }
 
 #skills > .left > p > a:hover {
-    background-color: #893636;
-    color: orangered;
+    /* background-color: #893636; */
+    background-color: #0f5a97;
+    /* color: orangered; */
 }
 
 #skills > .right > ul {
     list-style: none;
     font-size: 25px;
-    color: #fff;
+    /* color: #fff; */
+    color: #0f5a97;
     flex-direction: column;
     align-items: normal;
 }
@@ -268,7 +283,7 @@ ul > li > a:hover {
 
 #projects > article > div > h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5em;
     text-decoration: underline;
     color: #1d094c;
 }
@@ -277,7 +292,8 @@ ul > li > a:hover {
 /* hosting */
 #hosting {
     padding: 5.5em 1em;
-    background-color: #234431;
+    /* background-color: #234431; */
+    background: rgba(255, 255, 255, 0.2);
     background-attachment: fixed;
 }
 
@@ -286,7 +302,8 @@ ul > li > a:hover {
     text-align: center;
     font-size: 25px;
     line-height: 30px;
-    color: #fff;
+    /* color: #fff; */
+    color: #0f5a97;
     font-family: monospace;
 }
 
@@ -295,24 +312,29 @@ ul > li > a:hover {
 }
 
 #hosted > li {
-    background-color: #5b5858;
+    /* background-color: #5b5858; */
+    background: rgba(255, 255, 255, 0.4);
     margin: 2.5em 2em 0 2em;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
 }
 
 #hosted > li > a {
+    color: #234431;
     font-size: 25px;
 }
 
 #hosted > li:hover {
-    background-color: #05622d;
+    /* background-color: #05622d; */
+    transition: background-color 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.7);
 }
 
-#hosted > li > a:hover {
+/* #hosted > li > a:hover {
     color: #234431;
-}
+} */
 
 
 /* achievements */
@@ -328,7 +350,8 @@ ul > li > a:hover {
 }
 
 #achievements > article > div {
-    background-color: #5b5858;
+    /* background-color: #5b5858; */
+    background: rgba(255, 255, 255, 0.4);
     margin: 0 1rem;
     padding: 1rem;
     border-radius: 25px;
@@ -339,9 +362,9 @@ ul > li > a:hover {
     box-shadow: 7px 7px 5px rgba(0, 0, 0, .5);
 }
 
-#achievements > article > div:hover {
+/* #achievements > article > div:hover {
     background-color: #299f8c;
-}
+} */
 
 #achievements > article > div > h1 {
     text-decoration: underline;
@@ -353,7 +376,8 @@ ul > li > a:hover {
 #achievements > article > div > p {
     font-size: 19px;
     font-family: monospace;
-    color: #fff;
+    /* color: #fff; */
+    color: #0f5a97;
     line-height: 25px;
     /* text-align: left; */
 }
@@ -362,7 +386,8 @@ ul > li > a:hover {
 /* contact */
 #contact {
     padding: 5.5em 1em;
-    background-color: #234431;
+    /* background-color: #234431; */
+    background: rgba(255, 255, 255, 0.2);
     background-attachment: fixed;
 }
 
@@ -397,7 +422,7 @@ ul > li > a:hover {
     text-align: center;
     font-family: monospace;
     font-size: 25px;
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 
@@ -437,15 +462,16 @@ ul > li > a:hover {
     }
 
     #more_about_me {
+        width: 30%;
         margin-top: .75em;
         font-size: 17px;
-        padding: .75rem;
+        /* padding: .75rem; */
     }
 
-    #more_about_me:hover {
+    /* #more_about_me:hover {
         background-color: #846c68;
         color: #fff;
-    }
+    } */
 
 
     /* about me */
@@ -474,9 +500,9 @@ ul > li > a:hover {
 
 
     /* education */
-    #education {
+    /* #education {
         background: #5b5858;
-    }
+    } */
 
     #education > article {
         display: flex;
@@ -487,13 +513,13 @@ ul > li > a:hover {
         height: 200px;
         margin: 1.25em .75rem;
         padding: 0.75rem;
-        background-color: #3f3f3f;
-        color: #fff;
+        /* background-color: #3f3f3f;
+        color: #fff; */
     }
 
-    #education > article > div:hover {
+    /* #education > article > div:hover {
         background-color: #3f3f3f;
-    }
+    } */
 
 
     /* skills */
@@ -555,12 +581,12 @@ ul > li > a:hover {
         font-size: 20px;
     }
 
-    #hosted > li:hover {
+    /* #hosted > li:hover {
         background-color: #5b5858;
-    }
+    } */
     
     #hosted > li > a:hover {
-        color: #fff;
+        /* color: #fff; */
         text-decoration: none;
     }
 
@@ -579,9 +605,9 @@ ul > li > a:hover {
         width: 75%;
     }
 
-    #achievements > article > div:hover {
+    /* #achievements > article > div:hover {
         background: #5b5858;
-    }
+    } */
     
     #achievements > article > div > h1 {
         text-align: center;
@@ -615,6 +641,10 @@ ul > li > a:hover {
 
 
 @media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     #navbar {
         all: unset;
         text-align: center;
@@ -632,6 +662,10 @@ ul > li > a:hover {
         height: 75px;
         border-radius: 2.5px;
         text-align: center;
+    }
+
+    #more_about_me {
+        width: 50%;
     }
 
     #hosting > article > p {
