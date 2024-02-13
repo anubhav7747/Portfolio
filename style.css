@@ -371,6 +371,8 @@ ul > li > a:hover {
     font-size: 30px;
     margin-bottom: .5rem;
     /* text-align: left; */
+    text-align: center;
+    color: #30107a;
 }
 
 #achievements > article > div > p {
@@ -664,9 +666,26 @@ ul > li > a:hover {
         text-align: center;
     }
 
+    .profile-pic {
+        margin-top: 1em;
+    }
+
     #more_about_me {
         width: 50%;
     }
+    
+    #about_me > article > p {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    #skills > .left, #skills > .right {
+        text-align: left;
+    }
+
+    #skills > .left {
+        padding: 0 10px;
+    } 
 
     #hosting > article > p {
         margin-top: 1.5rem;
@@ -675,5 +694,17 @@ ul > li > a:hover {
     #hosted {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    #contact > article > div {
+        margin: 0 1rem;
+    }
+
+    #contact > article > div > p > a {
+        font-size: 1.30rem;
+    }
+
+    .footer > p {
+        font-size: 16px;
     }
 }
